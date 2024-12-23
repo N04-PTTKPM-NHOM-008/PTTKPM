@@ -1,0 +1,92 @@
+TÀI LIỆU ĐẶC TẢ YÊU CẦU PHẦN MỀM
+(Software Requirement Specification – SRS)
+
+
+1     Giới thiệu
+
+1.1	Mục đích
+
+Mục đích của tài liệu đặc tả yêu cầu phần mềm này là cung cấp một cái nhìn tổng quan, dễ hiểu về các yêu cầu và thành phần của dự án phát triển website bán hàng. 
+Tài liệu này không chỉ là tài liệu tham khảo cho sinh viên trực tiếp tham gia phát triển dự án phục vụ cho việc hoàn thành đồ án tốt nghiệp, mà còn là tài liệu hướng dẫn cho các nhà phát triển phần mềm, kiểm thử viên, nhà quản lý dự án và các bên liên quan trong môi trường thực tế. Nó giúp đảm bảo rằng tất cả các bên đều có cùng một hiểu biết về các yêu cầu của dự án, từ đó hỗ trợ quá trình phát triển và triển khai hệ thống một cách hiệu quả.
+
+1.2	Phạm vi
+
+Tài liệu đặc tả yêu cầu phần mềm này được xây dựng nhằm phục vụ cho dự án phát triển hệ thống website bán hàng. 
+Hệ thống này sẽ cung cấp cho khách hàng, tổ chức cá nhân một công cụ mua sắm trực tuyến tiện lợi, hiệu quả và tiết kiệm chi phí. 
+Hệ thống sẽ bao gồm các chức năng chính như quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. Ngoài ra, hệ thống sẽ hỗ trợ các tính năng như tìm kiếm sản phẩm, đánh giá và nhận xét sản phẩm, và các chương trình khuyến mãi. Mục tiêu là tạo ra một nền tảng mua sắm trực tuyến toàn diện, đáp ứng nhu cầu của người dùng và mang lại trải nghiệm mua sắm tốt nhất.
+
+1.3	Từ điển thuật ngữ
+
+Software Requirement Specification – SRS	Đặc tả yêu cầu phần mềm
+Use Case(s)	Biểu đồ mô tả những yêu cầu chức năng của hệ thống
+Web server	Phần mềm máy chủ cung cấp các chức năng, tài nguyên cho máy khách
+Javascript	Ngôn ngữ lập trình sử dụng trên các trình duyệt web
+HTML (Hypertext Markup Language)	Ngôn ngữ đánh dấu siêu văn bản
+
+1.4	Tài liệu ham khảo
+1.5	Tổng quát
+
+Tài liệu đặc tả yêu cầu phần mềm (SRS) này được xây dựng dựa trên các tiêu chuẩn và hướng dẫn của "IEEE Recommended Practice for Software Requirements Specifications" và "IEEE Guide for Developing System Requirements Specifications". Tài liệu này nhằm cung cấp một cái nhìn toàn diện về các yêu cầu cần thiết để phát triển hệ thống website bán hàng. Nó bao gồm các yêu cầu chức năng và phi chức năng, đảm bảo rằng hệ thống được thiết kế và triển khai đáp ứng đầy đủ các nhu cầu của người dùng và các bên liên quan. 
+
+Cấu trúc của tài liệu được chia làm ba phần chính:
+
+1.	Phần 1: Cung cấp cái nhìn tổng quan về các thành phần của SRS, giúp người đọc hiểu rõ cấu trúc và nội dung của tài liệu.
+2.	Phần 2: Mô tả chi tiết các yêu cầu chức năng của hệ thống, bao gồm quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. Phần này cũng đề cập đến các yếu tố, ràng buộc, đặc điểm người dùng và môi trường thực thi tác động lên hệ thống.
+3.	Phần 3: Trình bày các yêu cầu phi chức năng như hiệu suất, bảo mật, khả năng mở rộng và tính khả dụng của hệ thống. Những yêu cầu này đảm bảo rằng hệ thống không chỉ hoạt động đúng chức năng mà còn đáp ứng các tiêu chuẩn về chất lượng và hiệu quả.
+
+Tài liệu này sẽ là cơ sở để phát triển, kiểm thử và bảo trì hệ thống website bán hàng, đảm bảo rằng tất cả các bên liên quan đều có cùng một hiểu biết về các yêu cầu của dự án. Nó cũng giúp định hướng cho quá trình phát triển phần mềm, từ giai đoạn thiết kế đến triển khai và vận hành.
+
+2     Các yêu cầu chức năng
+
+2.1  Các tác nhân
+
+Hệ thống gồm có các tác nhân là Quản lý, Nhân viên và Khách hàng.
+      Quản lý: Người quản lý và duy trì hoạt động của hệ thống, có quyền truy 
+                     cập và quản lý toàn bộ hệ thống.
+      Nhân viên: Người hỗ trợ quản lý sản phẩm, đơn hàng và chăm sóc khách 
+                  
+      Khách hàng: Người sử dụng website để mua sắm, có thể duyệt sản phẩm, thêm vào giỏ hàng và thực hiện thanh toán.
+
+2.2  Các chức năng cảu hệ thống
+
+1.	Đăng nhập: Chức năng này nhằm mục đích xác thực người dùng khi tương tác với hệ thống, cung cấp quyền và phạm vi truy cập hệ thống.
+2.	Đăng ký: Để truy cập và sử dụng hệ thống, khách hàng cần đăng ký tài khoản.
+3.	Quản trị người dùng: Quản lý có vai trò quản lý các người dùng trong hệ thống, bao gồm việc thêm, sửa, xóa tài khoản nhân viên và khách hàng.
+4.	Quản lý sản phẩm: Quản lý và nhân viên có thể thêm, sửa, xóa và quản lý thông tin sản phẩm trên website.
+5.	Giỏ hàng: Khách hàng có thể thêm sản phẩm vào giỏ hàng, xem và chỉnh sửa giỏ hàng trước khi thanh toán.
+6.	Thanh toán: Chức năng này cho phép khách hàng hoàn tất việc mua hàng bằng cách cung cấp thông tin thanh toán và xác nhận đơn hàng.
+7.	Quản lý đơn hàng: Khách hàng có thể xem lịch sử đơn hàng, theo dõi trạng thái đơn hàng và quản lý các đơn hàng đã đặt. Nhân viên có thể cập nhật trạng thái đơn hàng và xử lý các yêu cầu liên quan.
+8.	Tìm kiếm sản phẩm: Chức năng này cho phép khách hàng tìm kiếm sản phẩm theo từ khóa, danh mục hoặc các tiêu chí khác.
+
+Để có thể hình dung rõ hơn về các tác nhân cũng như yêu cầu chức năng của hệ thống, các sơ đồ use cases sẽ được trình bày phía sau.
+
+2.3   Biểu đồ use case tổng quát
+
+ 
+
+2.4   Biểu đồ use case phân rã 
+
+2.4.1   Phân rã use case “Quản lí”
+ 
+
+2.4.2   Phân rã use case “Quản lý đặt hàng”
+
+ 
+
+2.4.3 Phân rã use case “Quản lí danh mục”
+
+ 
+
+2.4.4   Phân rã use case “Quản lý sản phẩm”
+
+ 
+
+2.4.5   Phân rã use case “Quản lý thành viên”
+
+ 
+
+2.4.6 Phân rã use case “Quản lý khách hàng”
+
+ 
+
+ 
