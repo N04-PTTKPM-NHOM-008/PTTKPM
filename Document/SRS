@@ -6,14 +6,19 @@ TÀI LIỆU ĐẶC TẢ YÊU CẦU PHẦN MỀM
 
 1.1	Mục đích
 
-Mục đích của tài liệu đặc tả yêu cầu phần mềm này là cung cấp một cái nhìn tổng quan, dễ hiểu về các yêu cầu và thành phần của dự án phát triển website bán hàng. 
-Tài liệu này không chỉ là tài liệu tham khảo cho sinh viên trực tiếp tham gia phát triển dự án phục vụ cho việc hoàn thành đồ án tốt nghiệp, mà còn là tài liệu hướng dẫn cho các nhà phát triển phần mềm, kiểm thử viên, nhà quản lý dự án và các bên liên quan trong môi trường thực tế. Nó giúp đảm bảo rằng tất cả các bên đều có cùng một hiểu biết về các yêu cầu của dự án, từ đó hỗ trợ quá trình phát triển và triển khai hệ thống một cách hiệu quả.
+Mục đích của tài liệu đặc tả yêu cầu phần mềm này là cung cấp một cái nhìn tổng quan, dễ hiểu về các yêu cầu và thành phần của dự án phát 
+triển website bán hàng. Tài liệu này không chỉ là tài liệu tham khảo cho sinh viên trực tiếp tham gia phát triển dự án phục vụ cho việc 
+hoàn thành đồ án tốt nghiệp, mà còn là tài liệu hướng dẫn cho các nhà phát triển phần mềm, kiểm thử viên, nhà quản lý dự án và các bên 
+liên quan trong môi trường thực tế. Nó giúp đảm bảo rằng tất cả các bên đều có cùng một hiểu biết về các yêu cầu của dự án, từ đó hỗ trợ 
+quá trình phát triển và triển khai hệ thống một cách hiệu quả.
 
 1.2	Phạm vi
 
 Tài liệu đặc tả yêu cầu phần mềm này được xây dựng nhằm phục vụ cho dự án phát triển hệ thống website bán hàng. 
 Hệ thống này sẽ cung cấp cho khách hàng, tổ chức cá nhân một công cụ mua sắm trực tuyến tiện lợi, hiệu quả và tiết kiệm chi phí. 
-Hệ thống sẽ bao gồm các chức năng chính như quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. Ngoài ra, hệ thống sẽ hỗ trợ các tính năng như tìm kiếm sản phẩm, đánh giá và nhận xét sản phẩm, và các chương trình khuyến mãi. Mục tiêu là tạo ra một nền tảng mua sắm trực tuyến toàn diện, đáp ứng nhu cầu của người dùng và mang lại trải nghiệm mua sắm tốt nhất.
+Hệ thống sẽ bao gồm các chức năng chính như quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. 
+Ngoài ra, hệ thống sẽ hỗ trợ các tính năng như tìm kiếm sản phẩm, đánh giá và nhận xét sản phẩm, và các chương trình khuyến mãi. 
+Mục tiêu là tạo ra một nền tảng mua sắm trực tuyến toàn diện, đáp ứng nhu cầu của người dùng và mang lại trải nghiệm mua sắm tốt nhất.
 
 1.3	Từ điển thuật ngữ
 
@@ -30,15 +35,23 @@ Hệ thống sẽ bao gồm các chức năng chính như quản lý sản phẩ
 1.4	Tài liệu ham khảo
 1.5	Tổng quát
 
-Tài liệu đặc tả yêu cầu phần mềm (SRS) này được xây dựng dựa trên các tiêu chuẩn và hướng dẫn của "IEEE Recommended Practice for Software Requirements Specifications" và "IEEE Guide for Developing System Requirements Specifications". Tài liệu này nhằm cung cấp một cái nhìn toàn diện về các yêu cầu cần thiết để phát triển hệ thống website bán hàng. Nó bao gồm các yêu cầu chức năng và phi chức năng, đảm bảo rằng hệ thống được thiết kế và triển khai đáp ứng đầy đủ các nhu cầu của người dùng và các bên liên quan. 
+Tài liệu đặc tả yêu cầu phần mềm (SRS) này được xây dựng dựa trên các tiêu chuẩn và hướng dẫn của
+ "IEEE Recommended Practice for Software Requirements Specifications" và "IEEE Guide for Developing System Requirements Specifications".
+ Tài liệu này nhằm cung cấp một cái nhìn toàn diện về các yêu cầu cần thiết để phát triển hệ thống website bán hàng. Nó bao gồm các yêu cầu
+  chức năng và phi chức năng, đảm bảo rằng hệ thống được thiết kế và triển khai đáp ứng đầy đủ các nhu cầu của người dùng và các bên liên
+  quan. 
 
 Cấu trúc của tài liệu được chia làm ba phần chính:
 
 1.	Phần 1: Cung cấp cái nhìn tổng quan về các thành phần của SRS, giúp người đọc hiểu rõ cấu trúc và nội dung của tài liệu.
-2.	Phần 2: Mô tả chi tiết các yêu cầu chức năng của hệ thống, bao gồm quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. Phần này cũng đề cập đến các yếu tố, ràng buộc, đặc điểm người dùng và môi trường thực thi tác động lên hệ thống.
-3.	Phần 3: Trình bày các yêu cầu phi chức năng như hiệu suất, bảo mật, khả năng mở rộng và tính khả dụng của hệ thống. Những yêu cầu này đảm bảo rằng hệ thống không chỉ hoạt động đúng chức năng mà còn đáp ứng các tiêu chuẩn về chất lượng và hiệu quả.
+2.	Phần 2: Mô tả chi tiết các yêu cầu chức năng của hệ thống, bao gồm quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài
+ khoản người dùng. Phần này cũng đề cập đến các yếu tố, ràng buộc, đặc điểm người dùng và môi trường thực thi tác động lên hệ thống.
+3.	Phần 3: Trình bày các yêu cầu phi chức năng như hiệu suất, bảo mật, khả năng mở rộng và tính khả dụng của hệ thống. Những yêu 
+cầu này đảm bảo rằng hệ thống không chỉ hoạt động đúng chức năng mà còn đáp ứng các tiêu chuẩn về chất lượng và hiệu quả.
 
-Tài liệu này sẽ là cơ sở để phát triển, kiểm thử và bảo trì hệ thống website bán hàng, đảm bảo rằng tất cả các bên liên quan đều có cùng một hiểu biết về các yêu cầu của dự án. Nó cũng giúp định hướng cho quá trình phát triển phần mềm, từ giai đoạn thiết kế đến triển khai và vận hành.
+Tài liệu này sẽ là cơ sở để phát triển, kiểm thử và bảo trì hệ thống website bán hàng, đảm bảo rằng tất cả các bên liên quan đều có cùng 
+một hiểu biết về các yêu cầu của dự án. Nó cũng giúp định hướng cho quá trình phát triển phần mềm, từ giai đoạn thiết kế đến triển khai và 
+vận hành.
 
 2     Các yêu cầu chức năng
 
@@ -59,7 +72,8 @@ Hệ thống gồm có các tác nhân là Quản lý, Nhân viên và Khách h�
 4.	Quản lý sản phẩm: Quản lý và nhân viên có thể thêm, sửa, xóa và quản lý thông tin sản phẩm trên website.
 5.	Giỏ hàng: Khách hàng có thể thêm sản phẩm vào giỏ hàng, xem và chỉnh sửa giỏ hàng trước khi thanh toán.
 6.	Thanh toán: Chức năng này cho phép khách hàng hoàn tất việc mua hàng bằng cách cung cấp thông tin thanh toán và xác nhận đơn hàng.
-7.	Quản lý đơn hàng: Khách hàng có thể xem lịch sử đơn hàng, theo dõi trạng thái đơn hàng và quản lý các đơn hàng đã đặt. Nhân viên có thể cập nhật trạng thái đơn hàng và xử lý các yêu cầu liên quan.
+7.	Quản lý đơn hàng: Khách hàng có thể xem lịch sử đơn hàng, theo dõi trạng thái đơn hàng và quản lý các đơn hàng đã đặt. Nhân viên có thể
+ cập nhật trạng thái đơn hàng và xử lý các yêu cầu liên quan.
 8.	Tìm kiếm sản phẩm: Chức năng này cho phép khách hàng tìm kiếm sản phẩm theo từ khóa, danh mục hoặc các tiêu chí khác.
 
 Để có thể hình dung rõ hơn về các tác nhân cũng như yêu cầu chức năng của hệ thống, các sơ đồ use cases sẽ được trình bày phía sau.
