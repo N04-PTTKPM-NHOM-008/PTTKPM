@@ -1,59 +1,41 @@
 TÀI LIỆU ĐẶC TẢ YÊU CẦU PHẦN MỀM
 (Software Requirement Specification – SRS)
 
-
-1     Giới thiệu
+1   Giới thiệu
 
 1.1	Mục đích
 
-Mục đích của tài liệu đặc tả yêu cầu phần mềm này là cung cấp một cái nhìn tổng quan, dễ hiểu về các yêu cầu và thành phần của dự án phát 
-triển website bán hàng. Tài liệu này không chỉ là tài liệu tham khảo cho sinh viên trực tiếp tham gia phát triển dự án phục vụ cho việc 
-hoàn thành đồ án tốt nghiệp, mà còn là tài liệu hướng dẫn cho các nhà phát triển phần mềm, kiểm thử viên, nhà quản lý dự án và các bên 
-liên quan trong môi trường thực tế. Nó giúp đảm bảo rằng tất cả các bên đều có cùng một hiểu biết về các yêu cầu của dự án, từ đó hỗ trợ 
-quá trình phát triển và triển khai hệ thống một cách hiệu quả.
+Mục đích của tài liệu đặc tả yêu cầu phần mềm này là cung cấp một cái nhìn tổng quan, dễ hiểu về các yêu cầu và thành phần của dự án phát triển website bán hàng. 
+Tài liệu này không chỉ là tài liệu tham khảo cho sinh viên trực tiếp tham gia phát triển dự án phục vụ cho việc hoàn thành đồ án tốt nghiệp, mà còn là tài liệu hướng dẫn cho các nhà phát triển phần mềm, kiểm thử viên, nhà quản lý dự án và các bên liên quan trong môi trường thực tế. Nó giúp đảm bảo rằng tất cả các bên đều có cùng một hiểu biết về các yêu cầu của dự án, từ đó hỗ trợ quá trình phát triển và triển khai hệ thống một cách hiệu quả.
 
 1.2	Phạm vi
 
 Tài liệu đặc tả yêu cầu phần mềm này được xây dựng nhằm phục vụ cho dự án phát triển hệ thống website bán hàng. 
 Hệ thống này sẽ cung cấp cho khách hàng, tổ chức cá nhân một công cụ mua sắm trực tuyến tiện lợi, hiệu quả và tiết kiệm chi phí. 
-Hệ thống sẽ bao gồm các chức năng chính như quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. 
-Ngoài ra, hệ thống sẽ hỗ trợ các tính năng như tìm kiếm sản phẩm, đánh giá và nhận xét sản phẩm, và các chương trình khuyến mãi. 
-Mục tiêu là tạo ra một nền tảng mua sắm trực tuyến toàn diện, đáp ứng nhu cầu của người dùng và mang lại trải nghiệm mua sắm tốt nhất.
+Hệ thống sẽ bao gồm các chức năng chính như quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. Ngoài ra, hệ thống sẽ hỗ trợ các tính năng như tìm kiếm sản phẩm, đánh giá và nhận xét sản phẩm, và các chương trình khuyến mãi. Mục tiêu là tạo ra một nền tảng mua sắm trực tuyến toàn diện, đáp ứng nhu cầu của người dùng và mang lại trải nghiệm mua sắm tốt nhất.
 
 1.3	Từ điển thuật ngữ
 
-	
-	
-| Software Requirement Specification - SRS    | Đặc tả yêu cầu phần mềm                                          |
-|---------------------------------------------|------------------------------------------------------------------|
-| Use Case(s)                                 | Biểu đồ mô tả những yêu cầu chức năng của hệ thống               |
-| Web server                                  | Phần mềm máy chủ cung cấp các chức năng, tài nguyên cho máy khách|
-| Javascript                                  | Ngôn ngữ lập trình sử dụng trên các trình duyệt web              |
-| HTML (Hypertext Markup Language)            | Ngôn ngữ đánh dấu siêu văn bản                                   |
-
+Software Requirement Specification – SRS	Đặc tả yêu cầu phần mềm
+Use Case(s)	Biểu đồ mô tả những yêu cầu chức năng của hệ thống
+Web server	Phần mềm máy chủ cung cấp các chức năng, tài nguyên cho máy khách
+Javascript	Ngôn ngữ lập trình sử dụng trên các trình duyệt web
+HTML (Hypertext Markup Language)	Ngôn ngữ đánh dấu siêu văn bản
 
 1.4	Tài liệu ham khảo
 1.5	Tổng quát
 
-Tài liệu đặc tả yêu cầu phần mềm (SRS) này được xây dựng dựa trên các tiêu chuẩn và hướng dẫn của
- "IEEE Recommended Practice for Software Requirements Specifications" và "IEEE Guide for Developing System Requirements Specifications".
- Tài liệu này nhằm cung cấp một cái nhìn toàn diện về các yêu cầu cần thiết để phát triển hệ thống website bán hàng. Nó bao gồm các yêu cầu
-  chức năng và phi chức năng, đảm bảo rằng hệ thống được thiết kế và triển khai đáp ứng đầy đủ các nhu cầu của người dùng và các bên liên
-  quan. 
+Tài liệu đặc tả yêu cầu phần mềm (SRS) này được xây dựng dựa trên các tiêu chuẩn và hướng dẫn của "IEEE Recommended Practice for Software Requirements Specifications" và "IEEE Guide for Developing System Requirements Specifications". Tài liệu này nhằm cung cấp một cái nhìn toàn diện về các yêu cầu cần thiết để phát triển hệ thống website bán hàng. Nó bao gồm các yêu cầu chức năng và phi chức năng, đảm bảo rằng hệ thống được thiết kế và triển khai đáp ứng đầy đủ các nhu cầu của người dùng và các bên liên quan. 
 
 Cấu trúc của tài liệu được chia làm ba phần chính:
 
 1.	Phần 1: Cung cấp cái nhìn tổng quan về các thành phần của SRS, giúp người đọc hiểu rõ cấu trúc và nội dung của tài liệu.
-2.	Phần 2: Mô tả chi tiết các yêu cầu chức năng của hệ thống, bao gồm quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài
- khoản người dùng. Phần này cũng đề cập đến các yếu tố, ràng buộc, đặc điểm người dùng và môi trường thực thi tác động lên hệ thống.
-3.	Phần 3: Trình bày các yêu cầu phi chức năng như hiệu suất, bảo mật, khả năng mở rộng và tính khả dụng của hệ thống. Những yêu 
-cầu này đảm bảo rằng hệ thống không chỉ hoạt động đúng chức năng mà còn đáp ứng các tiêu chuẩn về chất lượng và hiệu quả.
+2.	Phần 2: Mô tả chi tiết các yêu cầu chức năng của hệ thống, bao gồm quản lý sản phẩm, giỏ hàng, thanh toán, quản lý đơn hàng và tài khoản người dùng. Phần này cũng đề cập đến các yếu tố, ràng buộc, đặc điểm người dùng và môi trường thực thi tác động lên hệ thống.
+3.	Phần 3: Trình bày các yêu cầu phi chức năng như hiệu suất, bảo mật, khả năng mở rộng và tính khả dụng của hệ thống. Những yêu cầu này đảm bảo rằng hệ thống không chỉ hoạt động đúng chức năng mà còn đáp ứng các tiêu chuẩn về chất lượng và hiệu quả.
 
-Tài liệu này sẽ là cơ sở để phát triển, kiểm thử và bảo trì hệ thống website bán hàng, đảm bảo rằng tất cả các bên liên quan đều có cùng 
-một hiểu biết về các yêu cầu của dự án. Nó cũng giúp định hướng cho quá trình phát triển phần mềm, từ giai đoạn thiết kế đến triển khai và 
-vận hành.
+Tài liệu này sẽ là cơ sở để phát triển, kiểm thử và bảo trì hệ thống website bán hàng, đảm bảo rằng tất cả các bên liên quan đều có cùng một hiểu biết về các yêu cầu của dự án. Nó cũng giúp định hướng cho quá trình phát triển phần mềm, từ giai đoạn thiết kế đến triển khai và vận hành.
 
-2     Các yêu cầu chức năng
+2   Các yêu cầu chức năng
 
 2.1  Các tác nhân
 
@@ -72,14 +54,12 @@ Hệ thống gồm có các tác nhân là Quản lý, Nhân viên và Khách h�
 4.	Quản lý sản phẩm: Quản lý và nhân viên có thể thêm, sửa, xóa và quản lý thông tin sản phẩm trên website.
 5.	Giỏ hàng: Khách hàng có thể thêm sản phẩm vào giỏ hàng, xem và chỉnh sửa giỏ hàng trước khi thanh toán.
 6.	Thanh toán: Chức năng này cho phép khách hàng hoàn tất việc mua hàng bằng cách cung cấp thông tin thanh toán và xác nhận đơn hàng.
-7.	Quản lý đơn hàng: Khách hàng có thể xem lịch sử đơn hàng, theo dõi trạng thái đơn hàng và quản lý các đơn hàng đã đặt. Nhân viên có thể
- cập nhật trạng thái đơn hàng và xử lý các yêu cầu liên quan.
+7.	Quản lý đơn hàng: Khách hàng có thể xem lịch sử đơn hàng, theo dõi trạng thái đơn hàng và quản lý các đơn hàng đã đặt. Nhân viên có thể cập nhật trạng thái đơn hàng và xử lý các yêu cầu liên quan.
 8.	Tìm kiếm sản phẩm: Chức năng này cho phép khách hàng tìm kiếm sản phẩm theo từ khóa, danh mục hoặc các tiêu chí khác.
 
 Để có thể hình dung rõ hơn về các tác nhân cũng như yêu cầu chức năng của hệ thống, các sơ đồ use cases sẽ được trình bày phía sau.
 
 2.3   Biểu đồ use case tổng quát
-![alt](http:///Users/embexinhtuoi/PTTKPM/Image/2.3   Biểu đồ use case tổng quát.png)
 
 2.4   Biểu đồ use case phân rã 
 
@@ -95,6 +75,549 @@ Hệ thống gồm có các tác nhân là Quản lý, Nhân viên và Khách h�
 
 2.4.6 Phân rã use case “Quản lý khách hàng”
 
- 
+2.5   Đặc tả usecase
+
+2.5.1  Đăng ký:
+
+| **Tác nhân**       | Quản lí, Nhân viên, Khách hàng                                                                             |
+|------------------- |------------------------------------------------------------------------------------------------------------|
+| **Mô tả**          | Đăng ký                                                                                                    |
+| **Kích hoạt**      | Quản lí, Nhân viên, Khách hàng                                                                             |
+| **Đầu vào**        | - Email                                                                                                    |
+|                    | - Mật khẩu                                                                                                 |
+| **Trình tự xử lí** | 1. Chuyển sang form đăng ký, hệ thống yêu cầu nhập username, password, email, chọn quyền và chọn đăng ký.  |
+|                    | 2. Hệ thống kiểm tra các thông tin:                                                                        |
+|                    | - Trống: Báo lỗi.                                                                                         |
+|                    | 3. Nếu thông tin hợp lệ, lưu vào cơ sở dữ liệu.                                                            |
+| **Đầu ra**         | - **Đúng**: Chuyển hướng về trang người dùng và báo đăng ký thành công.                                    |
+|                    | - **Sai**: Chuyển hướng về trang đăng nhập và thông báo đăng ký thất bại.                                  |
+| **Lưu ý**          | - Kiểm tra ô nhập không được để trống bằng JavaScript.                                                     |
+|                    | - Trang đăng ký của Quản lí và Nhân viên khác với trang đăng ký của Khách hàng.                            |
 
  
+2.5.2  Đăng nhập:
+| **Tác nhân**       | Quản lí, Nhân viên, Khách hàng                                                                             |
+|------------------- |------------------------------------------------------------------------------------------------------------|
+| **Mô tả**          | Đăng ký                                                                                                    |
+| **Kích hoạt**      | Quản lí, Nhân viên, Khách hàng                                                                             |
+| **Đầu vào**        | - Email                                                                                                    |
+|                    | - Mật khẩu                                                                                                 |
+| **Trình tự xử lí** | 1. Chuyển sang 1 form đăng nhập                                                                            |
+|                    | 2. Lấy thông tin từ form ( email và mật khẩu ), kiểm tra thông tin không được để trống                     |
+|                    |  - Trống: Chuyển hướng về trang đăng nhập và báo lỗi                                                       |
+|                    | 3. Nếu thông tin hợp lệ, lưu vào cơ sở dữ liệu.                                                            |
+| **Đầu ra**         | - **Đúng**: Chuyển hướng về trang người dùng và báo đăng nhập thành công.                                  |
+|                    | - **Sai**: Chuyển hướng về trang đăng nhập và thông báo đăng nhập thất bại.                                |
+| **Lưu ý**          | - Kiểm tra ô nhập không được để trống bằng JavaScript.                                                     |
+|                    | - Trang đăng nhập của Quản lí và Nhân viên khác với trang đăng nhập của Khách hàng.                        |
+
+ 
+2.5.3  Đăng xuất:
+ 
+| **Tác nhân**      | Quản lí, Nhân viên, Khách hàng                                                      |
+|-------------------|-------------------------------------------------------------------------------------|
+| **Mô tả**         | Đăng xuất                                                                           |
+| **Kích hoạt**     | Người dùng nhấn vào nút Đăng xuất                                                   |
+| **Đầu vào**       | Không                                                                               |
+| **Trình tự xử lí**| 1. Sau khi ấn vào nút Đăng xuất, hệ thống sẽ xóa phiên đăng nhập khỏi trình duyệt.  |
+|                   | 2. Chuyển hướng về trang đăng nhập.                                                 |
+| **Đầu ra**        | - **Đúng**: Chuyển hướng về trang đăng nhập và báo đăng xuất thành công.            |
+| **Lưu ý**         | - Để đăng xuất được, người dùng phải đăng nhập trước.                               |
+|                   | - Trang đăng nhập của Quản lí và Nhân viên khác với trang đăng nhập của Khách hàng. |
+
+ 
+2.5.4  Xem sản phẩm:
+ 
+| **Tác nhân**      | Quản lí, Nhân viên                                                                                                                              |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Mô tả**         | Xem các sản phẩm của cửa hàng                                                                                                                    |
+| **Kích hoạt**     | Nhấn vào nút Quản lí sản phẩm trong Menu Vùng nội bộ                                                                                             |
+| **Đầu vào**       | Không                                                                                                                                            |
+| **Trình tự xử lí**| 1. Chuyển sang trang xem sản phẩm.                                                                                                               |
+|                   | 2. Kết nối CSDL và lấy ra tất cả sản phẩm, hiển thị chúng dưới dạng danh sách.                                                                   |
+|                   | 3. Hiển thị các thông tin về sản phẩm:                                                                                                           |
+|                   | - Mã, Tên, Giá, Hình ảnh, Nhà sản xuất.                                                                                                          |
+|                   | - Các tác động lên sản phẩm: Xem chi tiết, Sửa, Xóa.                                                                                             |
+|                   | 4. **Xem chi tiết sản phẩm**:                                                                                                                    |
+|                   | - Xem chi tiết ở một trang đẹp hơn, với các thông tin cơ bản như trong trang Quản lí sản phẩm.                                                   |
+|                   | - Thêm thông tin chi tiết như: Các thẻ gắn, Số sản phẩm bán được, Số tiền thu được từ sản phẩm, Lần cuối cùng sản phẩm được mua, Mô tả sản phẩm. |
+| **Đầu ra**        | - **Đúng**: Hiển thị tất cả sản phẩm có sẵn trong danh sách.                                                                                     |
+| **Lưu ý**         | - Chức năng này chỉ dành cho Quản lí hoặc Nhân viên.                                                                                             |
+|                   | - Cần có chức năng phân trang và tìm kiếm theo tên sản phẩm để thuận tiện cho người sử dụng.                                                     |
+|                   | - Quản lí sẽ thấy nút Xóa sản phẩm, còn Nhân viên sẽ không thấy nút này.                                                                         |
+
+2.5.5  Thêm sản phẩm:
+ 
+| **Tác nhân**      | Quản lí, Nhân viên                                |
+|-------------------|---------------------------------------------------|
+| **Mô tả**         | Thêm sản phẩm vào cửa hàng                        |
+| **Kích hoạt**     | Nhấn vào nút Thêm sản phẩm trong Menu Vùng nội bộ |
+| **Đầu vào**       | - Tên sản phẩm                                    |
+|                   | - Mô tả sản phẩm                                  |
+|                   | - Giá                                             |
+|                   | - Hình ảnh                                        |
+|                   | - Nhà sản xuất                                    |
+|                   | - Thể loại                                        |
+| **Trình tự xử lí**| 1. Chuyển sang form điền thông tin sản phẩm.     |
+|                   | 2. Thông tin được lấy từ form và phải có giá trị, không được để trống.                |
+|                   |    - Nếu thông tin trống: Chuyển hướng lại form điền thông tin sản phẩm và báo lỗi.   |
+|                   | 3. Kiểm tra tính hợp lệ của thông tin người dùng đã nhập.                             |
+|                   |    - Nếu hợp lệ, bắt đầu xử lý việc thêm sản phẩm.                                    |
+|                   | 4. Thêm sản phẩm cùng với thông tin thể loại của sản phẩm.                            |
+|                   | 5. Chuyển hướng về trang Quản lí sản phẩm và thông báo thêm thành công.               |
+| **Đầu ra**        | - **Đúng**: Chuyển hướng về trang Quản lí sản phẩm và báo thêm thành công.            |
+|                   | - **Sai**: Chuyển hướng về trang Thêm sản phẩm và báo thông tin đầu vào không hợp lệ. |
+| **Lưu ý**         | - Chức năng này chỉ dành cho Quản lí hoặc Nhân viên.                                  |
+|                   | - Để tiện cho người sử dụng, nên có chức năng phân trang và tìm kiếm theo tên sản phẩm|
+
+2.5.6  Sửa sản phẩm:
+ 
+| **Tác nhân**      | Quản lí, Nhân viên                                                                                    |
+|-------------------|-------------------------------------------------------------------------------------------------------|
+| **Mô tả**         | Sửa sản phẩm có sẵn trong cửa hàng                                                                    |
+| **Kích hoạt**     | Nhấn vào nút Sửa sản phẩm trong Menu Vùng nội bộ -> Quản lí sản phẩm                                  |
+| **Đầu vào**       | - Mã sản phẩm                                                                                         |
+| **Trình tự xử lí**| 1. Chuyển sang form sửa thông tin sản phẩm.                                                           |
+|                   | 2. Form sửa sản phẩm hiện ra thông tin cũ của sản phẩm đó bằng cách kết nối CSDL và lấy ra thông tin. |
+|                   | 3. Người dùng có thể sửa thông tin trong form. Các trường không được để trống.                        |
+|                   |    - Nếu thông tin trống: Chuyển hướng lại form sửa sản phẩm và báo lỗi.                              |
+|                   | 4. Kiểm tra tính hợp lệ của thông tin người dùng đã nhập.                                             |
+|                   |    - Nếu hợp lệ, bắt đầu xử lý việc sửa sản phẩm.                                                     |
+|                   | 5. Chuyển hướng về trang Quản lí sản phẩm và thông báo sửa thành công.                                |
+| **Đầu ra**        | - **Đúng**: Chuyển hướng về trang Quản lí sản phẩm và thông báo sửa thành công.                       |
+|                   | - **Sai**: Chuyển hướng về trang Sửa sản phẩm và báo thông tin đầu vào không hợp lệ.                  |
+| **Lưu ý**         | - Chức năng này chỉ dành cho Quản lí hoặc Nhân viên.                                                  |
+|                   | - Các tệp ảnh sản phẩm sẽ được lưu trong Máy chủ, ảnh cũ không bị xóa đi.                             |
+
+ 
+2.5.7  Xóa sản phẩm:
+ 
+Các tác nhân	Quản lí
+Mô tả	Xóa sản phẩm có sẵn trong cửa hàng
+Kích hoạt	Nhấn vào nút Xóa sản phẩm trong Menu Vùng nội bộ -> Quản lí sản phẩm
+Đầu vào 	Mã sản phẩm
+Trình tự xử lí	•	Xóa sản phẩm theo mã sản phẩm
+•	Xóa thành công: Chuyển hướng về trang Quản lí sản phẩm và thông báo xóa thanh công
+•	Xóa thất bại do:
+o	Sản phẩm đang trong đơn của khách hàng
+o	Sản phẩm có gắn thẻ
+•	Chuyển hướng về trang Quản lí sản phẩm
+Đầu ra	•	Đúng: Chuyển hướng về trang Quản lí sản phẩm và thông báo xóa thành công
+•	Sai: Chuyển hướng về trang Sửa sản phẩm và thông báo xóa thất bạ
+
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí
+•	Ảnh cũ không được xóa đi
+ 
+2.5.8  Xem hóa đơn:
+ 
+Các tác nhân	Quản lí, nhân viên
+Mô tả	Xem các hóa đơn ở trạng thái chưa duyệt và đang giao
+Kích hoạt	Nhấn vào nút Quản lí hóa đơn trong Menu Vùng nội bộ
+Đầu vào 	Không
+Trình tự xử lí	•	Chuyển sang trang xem hóa đơn
+•	Lấy ra tất cả hóa đơn trong CSDL và hiển thị ra theo dạng danh sách
+•	Hiển thị những thông tin:
+o	Về hóa đơn: mã, thời gian đặt, thông tin người đặt, người nhận, trạng thai, tổng tiền hóa đơn
+o	Tác động lên hóa đơn: Xem chi tiết, duyệt
+	Xem chi tiết từng sản phẩm của đơn hàng, có các thông tin như: Ảnh sản phẩm, Tên, Giá, Số lượng, Tổng tiền từng sản phẩm và tổng tiền toàn bộ
+	Duyệt: Duyệt đơn sang trạng thái Đang giao, hoặc từ Đang giao sang Giao thanh công, hoặc Hủy đơn hàng
+
+Đầu ra	Đúng: Hiển thị ra tất cả hóa đơn
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí
+•	Để tiện cho người sử dụng nên có chức năng phân trang và tìm kiếm theo tên hóa đơn
+
+ 
+2.5.9  Quản lí gắn thẻ:
+ 
+Các tác nhân	Quản lí, nhân viên
+Mô tả	Quản lí các thẻ được gắn trên sản phẩm và sản phẩm theo thẻ
+Kích hoạt	Nhấn vào nút Quản lí gắn thẻ trong Menu Vùng nội bộ
+Đầu vào 	Không
+Trình tự xử lí	•	Chuyển sang trang Quản lí gắn thẻ
+•	Có những thông tin:
+o	Về thẻ: Mã thẻ, Tên thẻ
+o	Chức năng liên quan tới thẻ:
+	Xem sản phẩm sử dụng thẻ x: Liệt kê ra các sản phẩm có gắn thẻ x, có thể xóa thẻ x khỏi sản phẩm đó
+	Thêm sản phẩm vào thẻ x: Người dùng có thể chọn sản phẩm để thêm thẻ x vào sản phẩm
+	Đổi tên thẻ: Chuyển sang trang sửa tên thẻ để sửa, nhấn sửa để Đổi tên thẻ
+	Xóa thẻ: Xóa thẻ đó nếu không có sản phẩm nào được gắn thẻ đó
+
+Đầu ra	Đúng: Hiển thị ra tất cả thẻ kèm theo chức năng tác động lên thẻ
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+•	Để tiện cho người sử dụng nên có chức năng phân trang và tìm kiếm theo tên thẻ
+
+ 
+2.5.10  Thêm thẻ mới vào sản phẩm:
+ 
+Các tác nhân	Quản lí, nhân viên
+Mô tả	Thêm nhiều thẻ mới vào sản phẩm
+Kích hoạt		Nhấn vào nút Thêm thẻ vào sản phẩm trong Menu Vùng nội bộ
+Đầu vào 	Các tên thẻ
+Trình tự xử lí	•	Chuyển sang trang Thêm thẻ vào sản phẩm
+•	Chọn sản phẩm muốn thêm thẻ và ấn vào nút Thêm
+•	Chuyển hướng sang Trang thêm thẻ vào sản phẩm x
+•	Có thể nhập nhiều tên thẻ 1 lúc
+•	Sau khi ấn nút Thêm thẻ thì xử lí thêm những thẻ đó vào sản phẩm x
+•	Chuyển hướng về trang Thêm thẻ vào sản phẩm
+Đầu ra	•	Đúng: Thông báo thêm thẻ thành công và chuyển hướng về trang Thêm thẻ vào sản phẩm
+•	Sai: Nhập sai id sản phẩm cần thêm
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+•	Để tiện cho người sử dụng nên có chức năng phân trang và tìm kiếm theo tên sản phẩm cần thêm thẻ
+
+ 
+2.5.11  Xem lịch sử hành động:
+ 
+Các tác nhân	Quản lí, nhân viên
+Mô tả		Xem lịch sử các hành động phía quản lí trang web
+Kích hoạt	Nhấn vào nút Lịch sử hoạt động trong Menu Vùng nội bộ
+Đầu vào 	Không
+Trình tự xử lí	•	Chuyển sang trang Lịch sử hoạt động
+•	Trang này sẽ hiển thị những thông tin như Mã hành động, Thông tin hành động ( Ai làm việc gì ), Thời gian thực thi hành động đó
+
+Đầu ra		Đúng: Hiển thị danh sách các hành động
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+•	Để tiện cho người sử dụng nên có chức năng phân trang và tìm kiếm theo thông tin hoạt động
+
+ 
+2.5.12  Xem thống kê sản phẩm theo thời gian:
+ 
+Các tác nhân	Quản lí
+Mô tả	Xem thống kê sản phẩm dưới dạng biểu đồ
+Kích hoạt	Nhấn vào nút Thống kê sản phẩm trong Menu Vùng nội bộ
+Đầu vào 	Thời gian: Từ ngày x tới ngày y hoặc x ngày gần đây hoặc Tháng x
+Trình tự xử lí	•	Chuyển sang trang Thống kê sản phẩm
+•	Đọc dữ liệu nhập vào của người dùng:
+o	Hình thức thống kê: ( Ngày chỉ định tới ngày chỉ định, hoặc Số ngày gần đây, hoặc Tháng )
+o	Giá trị theo hình thức thống kê đã chọn:
+	Ví dụ ở hình thức thống kê ngày x tới ngày y: Từ 12-05-2021 đến 12-7-2022, ….
+	Ví dụ ở hình thức thống kê số ngày gần đây: 14 ngày gần đây, 30 ngày gần đây, …
+	Ví dụ ở hình thức thống kê theo tháng: Tháng 1, Tháng 7, ….
+•	Sau khi đọc xong dữ liệu sẽ trả về 1 biểu đồ cột có những thông tin như Tên sản phẩm ứng với Số lượng sản phẩm bán được theo ngày đã chọn
+
+Đầu ra	Đúng: Hiển thị biểu đồ cột thể hiện số sản phẩm bán được theo thời gian
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+•	Người dùng có thể xem chi tiết từng sản phẩm đó bán ở ngày nào bằng cách Click chuột vào cột đó
+
+ 
+2.5.13  Xem thống kê hóa đơn theo thời gian:
+ 
+Các tác nhân	Quản lí
+Mô tả	Xem thống kê hóa đơn dưới dạng biểu đồ
+Kích hoạt	Nhấn vào nút Thống kê hóa đơn trong Menu Vùng nội bộ
+Đầu vào 	Thời gian: Từ ngày x tới ngày y hoặc x ngày gần đây hoặc tháng x
+Trình tự xử lí	•	Chuyển sang trang Thống kê sản phẩm
+•	Đọc dữ liệu nhập vào của người dùng:
+o	Hình thức thống kê: ( Ngày chỉ định tới ngày chỉ định, hoặc Số ngày gần đây, hoặc Tháng )
+o	Giá trị theo hình thức thống kê đã chọn:
+	Ví dụ ở hình thức thống kê ngày x tới ngày y: Từ 12-05-2021 đến 12-7-2022, ….
+	Ví dụ ở hình thức thống kê số ngày gần đây: 14 ngày gần đây, 30 ngày gần đây, …
+	Ví dụ ở hình thức thống kê theo tháng: Tháng 1, Tháng 7, ….
+•	Sau khi đọc xong dữ liệu sẽ trả về 1 biểu đồ tròn có những thông tin như Tên hóa đơn phân theo trạng thái ứng với Số lượng hóa đơn của trạng thái đó theo ngày đã chọn
+
+Đầu ra	Đúng: Hiển thị biểu đồ tròn thể hiện số hóa đơn phân theo trạng thái theo thời gian đã chọn
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+ 
+2.5.14  Xem thống kê doanh thu theo thời gian:
+ 
+Các tác nhân	Quản lí
+Mô tả	Xem thống kê doanh thu dưới dạng biểu đồ
+Kích hoạt	Nhấn vào nút Thống kê doanh thu trong Menu Vùng nội bộ
+Đầu vào 	Thời gian: Theo năm x hoặc x ngày gần đây hoặc Tháng x
+Trình tự xử lí	•	Chuyển sang trang Thống kê sản phẩm
+•	Đọc dữ liệu nhập vào của người dùng:
+o	Hình thức thống kê: ( Theo năm, hoặc Số ngày gần đây, hoặc Tháng )
+o	Giá trị theo hình thức thống kê đã chọn:
+	Ví dụ ở hình thức thống kê theo năm: Năm 2022, năm 2021, …
+	Ví dụ ở hình thức thống kê số ngày gần đây: 14 ngày gần đây, 30 ngày gần đây, …
+	Ví dụ ở hình thức thống kê theo tháng: Tháng 1, Tháng 7, ….
+•	Sau khi đọc xong dữ liệu sẽ trả về 1 biểu đồ đường có những thông tin như Số tiền thu được ứng với Mốc thời gian thuộc khoảng thời gian đã chọn
+
+Đầu ra	Đúng: Hiển thị biểu đồ đường thể hiện doanh thu theo thời gian đã chọn
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+
+ 
+2.5.15  Xem thống kê khách hàng thân thiết:
+ 
+Các tác nhân	Quản lí
+Mô tả	Xem thống kê khách hàng thân thiết dưới dạng biểu đồ
+Kích hoạt	Nhấn vào nút Thống kê khách hàng trong Menu Khách hàng
+Đầu vào 	Không
+Trình tự xử lí	•	Chuyển sang trang Thống kê khách hàng
+•	Trả về 1 biểu đồ cột có những thông tin như Tên khách hàng ứng với Số tiền mà khách hàng đó đã bỏ ra
+
+Đầu ra	Đúng: Hiển thị biểu cột đường thể hiện doanh thu theo thời gian đã chọn	
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+
+ 
+2.5.16  Quản lí khách hàng:
+ 
+Các tác nhân	Quản lí
+Mô tả	Xem chi tiết thông tin khách hàng đó và những hóa đơn mà khách đó đã đặt
+Kích hoạt	Nhấn vào nút Quản lí khách hàng trong Menu Khách hàng
+Đầu vào 	Không
+Trình tự xử lí	•	Chuyển sang trang Quản lí khách hàng
+•	Trả về 1 bảng có:
+o	Thông tin của khách hàng: Mã khách hàng, Tên khách hàng, Lần cuối mua hàng, Số tiền bỏ ra
+o	Chức năng tác động lên khách hàng: Xem chi tiết khách hàng -> Xem được nhiều thông tin hơn ( Giới tinh, Ngày sinh, Email, Những hóa đơn khách hàng đó đã đặt )
+
+Đầu ra	Đúng: Hiển thị bảng có những thông tin về các khách hàng đã đăng ký tài khoản
+Lưu ý	•	Để dùng được chức năng này phải là Quản lí hoặc Nhân viên
+•	Để tiện cho người sử dụng nên có chức năng phân trang và tìm kiếm theo tên khách hàng
+
+ 
+2.5.17  Đăng nhập khách hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Xem thông tin sản phẩm một cách chi tiết
+Kích hoạt	Người dùng ấn vào nút “Xem chi tiết” trên thẻ sản phẩm
+Đầu vào 	Mã sản phẩm
+Trình tự xử lí	•	Điều hướng sang trang sản phẩm chi tiết
+•	Lấy thông tin mã sản phẩm từ thanh địa chỉ
+o	Trống: điều hướng về trang chủ
+•	Kết nối CSDL
+•	Kiểm tra trong CSDL có mã sản phẩm này không
+o	Không: Điều hướng về trang chủ
+o	Có: Lấy thông tin sản phẩm theo mã sản phẩm
+
+Đầu ra	•	Đúng: Hiển thị thông tin sản phẩm chi tiết theo mã vừa lấy
+•	Sai: Điều hướng về trang chủ
+Lưu ý	Trang sản phẩm chi tiết của khách hàng không có tài khoản và có tài khoản có sự khác biệt ở nút thêm vào giỏ hàng
+ 
+2.5.18  Thêm vào giỏ hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Thêm sản phẩm vào giỏ hàng
+Kích hoạt	Người dùng ấn vào nút “Thêm vào giỏ hàng” trên thẻ sản phẩm
+Đầu vào 	•	Mã sản phẩm
+•	Mã khách hàng
+•	Kiểu thay đổi
+Trình tự xử lí	•	Lấy thông tin mã sản phẩm từ thanh địa chỉ và mã khách hàng từ phiên đăng nhập
+•	Kết nối CSDL
+•	Kiểm tra xem giỏ hàng có sản phẩm nào chưa
+o	Chưa có:
+	Thêm vào hoá đơn mới(mã khách hàng, trạng thái hoá đơn: mặc định là 1 tức đang trong giỏ hàng)
+	Lấy mã hoá đơn vừa thêm vào
+	Lấy thông tin sản phẩm theo mã sản phẩm
+	Thêm sản phẩm vào hoá đơn chi tiết(mã hoá đơn, mã sản phẩm, số lượng sản phẩm = 1)
+o	Đã có:
+	Lấy mã hoá đơn có trạng thái bằng 1.
+	Lấy thông tin sản phẩm theo mã sản phẩm
+	Thêm sản phẩm vào hoá đơn chi tiết(mã hoá đơn, mã sản phẩm, số lượng sản phẩm)
+
+Đầu ra	Đúng: Tăng số lượng của sản phẩm lên 1 và thông báo thành công
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.19  Xem giỏ hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Xem giỏ hàng
+Kích hoạt	Người dùng ấn vào nút “Giỏ hàng” trên thanh menu
+Đầu vào 	Mã khách hàng
+Trình tự xử lí	•	Điều hướng sang trang giỏ hàng cá nhân
+•	Kết nối CSDL
+•	Lấy mã khách hàng từ phiên đăng nhập
+•	Kiểm tra trong bảng hoá đơn có hoá đơn nào có cùng mã khách hàng và trạng thái bằng 1 hay không
+
+Đầu ra	•	Có: Hiển thị các sản phẩm hiện có trong giỏ hàng của khách hàng
+•	Không có: Hiển thị giỏ hàng hiện không có gì
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.20  Thay đổi số lượng sản phẩm:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Tăng hoặc giảm 1 sản phẩm
+Kích hoạt	Người dùng ấn vào nút (+) và (-) trong giỏ hàng
+Đầu vào 	•	Mã sản phẩm
+•	Mã khách hàng
+•	Kiểu thay đổi
+Trình tự xử lí	•	Lấy thông tin mã khách hàng từ phiên đăng nhập, mã sản phẩm và kiểu thay đổi từ dữ liệu của nút (+) hoặc (-)
+•	Truyền mã sản phẩm và kiểu thay đổi bằng ajax
+•	Kết nối CSDL
+•	Thay đổi số lượng sản phẩm có mã sản phẩm như trên đi 1 đơn vị dựa trên kiểu thay đổi trong đơn hàng có trạng thái bằng 1
+o	Tăng lên: tăng lên 1 sản phẩm trong giỏ
+o	Giảm đi:
+	Giỏ có 1 sản phẩm: xoá sản phẩm khỏi giỏ
+	Giỏ có nhiều hơn 1 sản phẩm: Giảm đi 1 sản phẩm
+
+Đầu ra	•	Thông báo tăng giảm số lượng sản phẩm thành công
+•	Hiển thị giỏ hàng sau khi cập nhật
+Lưu ý		Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.21  Xóa sản phẩm:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Xoá sản phẩm khỏi giỏ hàng
+Kích hoạt	Người dùng ấn vào nút “Xóa” trong giỏ hàng
+Đầu vào 	•	Mã sản phẩm
+•	Mã khách hàng
+Trình tự xử lí	•	Lấy thông tin id sản phẩm và id khách hàng từ thanh địa chỉ
+•	Kết nối CSDL
+•	Xoá sản phẩm khỏi đơn hàng có trạng thái đơn bằng 1
+
+Đầu ra	•	Thông báo xóa sản phẩm vào giỏ hàng thành công.
+•	Hiển thị giỏ hàng sau khi cập nhật
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.22  Đặt hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Đặt hàng
+Kích hoạt	Người dùng ấn vào nút “Đặt hàng” trong giỏ hàng
+Đầu vào 	•	Mã sản phẩm
+•	Mã khách hàng
+Trình tự xử lí	•	Hiển thị modal đặt hàng
+•	Kết nối CSDL
+•	Lấy thông tin mã khách hàng từ phiên đăng nhập; thông tin sản phẩm trong giỏ hàng(đơn hàng có trạng thái là 1), thông tin địa chỉ mặc định(trạng thái bằng 1)
+•	Hiển thị thông tin các sản phẩm trong giỏ, các thông tin về địa chỉ giao hàng hiện có
+•	Gửi thông tin lên CSDL qua ajax, đổi trạng thái hoá đơn từ 1 sang 2
+
+Đầu ra	•	Chuyển hướng về trang đơn hàng
+•	Thông báo đặt hàng thành công
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.23  Xem chi tiết sản phẩm trong giỏ hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Xem chi tiết sản phẩm trong giỏ
+Kích hoạt	Người dùng ấn vào tên sản phẩm trong giỏ hàng
+Đầu vào 	Mã sản phẩm
+Trình tự xử lí	•	Chuyển sang trang chi tiết sản phẩm
+•	Lấy thông tin mã sản phẩm từ thanh địa chỉ
+•	Kết nối CSDL
+•	Hiển thị thông tin chi tiết của sản phẩm có mã trùng với mã sản phẩm vừa lấy
+
+Đầu ra	Hiển thị thông tin chi tiết của sản phẩm có mã trùng với mã sản phẩm vừa lấy
+Lưu ý	•	Chỉ có khi khách đã đăng nhập tài khoản
+•	Trang sản phẩm chi tiết của khách hàng không có tài khoản và có tài khoản có sự khác biệt ở nút thêm vào giỏ hàng
+
+ 
+2.5.24  Xem địa chỉ nhận hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Xem các địa chỉ nhận hàng của tài khoản khách
+Kích hoạt	Người dùng ấn vào nút địa chỉ giao hàng trên thanh menu
+Đầu vào 	Mã khách hàng
+Trình tự xử lí	•	Chuyển sang trang địa chỉ nhận hàng
+•	Lấy thông tin mã khách hàng từ phiên đăng nhập
+•	Kết nối CSDL
+•	Lấy thông tin những địa chỉ có mã khách hàng bằng mã khách hàng lấy từ phiên đăng nhập
+
+Đầu ra	•	Có: Hiển thị các địa chỉ giao hàng
+•	Không: Hiển thị chưa có địa chỉ nào, mời thêm.
+Lưu ý	Hiển thị các địa chỉ giao hàng
+ 
+2.5.25  Thêm địa chỉ nhận hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Thêm địa chỉ nhận hàng
+Kích hoạt	Người dùng ấn vào nút “Tạo thêm” ở trang địa chỉ giao hàng hoặc modal địa chỉ giao hàng
+Đầu vào 	Mã khách hàng
+Trình tự xử lí	•	Hiển thị modal form thêm địa chỉ nhận hàng
+•	Lấy thông tin từ form
+•	Kiểm tra thông tin có hợp lệ không
+o	Không: báo lỗi và yêu cầu nhập lại
+•	Kết nối CSDL
+•	Thêm địa chỉ mới vào bảng địa chỉ nhận hàng trong CSDL
+
+Đầu ra	•	Thông báo thêm địa chỉ thành công
+•	Chỉ có khi khách đã đăng nhập tài khoản
+Lưu ý	Hiển thị các địa chỉ giao hàng
+ 
+2.5.26  Sửa địa chỉ nhận hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Sửa địa chỉ nhận hàng
+Kích hoạt	Người dùng ấn vào nút “Sửa” trong trang địa chỉ nhận hàng hoặc trong khi đặt hàng
+Đầu vào 	•	Mã địa chỉ
+•	Mã khách hàng
+Trình tự xử lí	•	Kết nối CSDL
+•	Lấy thông tin mã địa chỉ từ ajax
+•	Lấy thông tin địa chỉ của mã khách hàng có mã địa chỉ ở trên
+•	Hiển thị modal form thay đổi thông tin địa chỉ với các thông tin cũ
+•	Lấy thông tin địa chỉ từ form trên
+•	Cập nhật lên CSDL
+Đầu ra	•	Thông báo sửa địa chỉ thành công
+•	Tải lại trang
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.27  Xóa địa chỉ nhận hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Xoá địa chỉ nhận hàng
+Kích hoạt	Người dùng ấn vào nút “Xoá” trong trang địa chỉ nhận hàng
+Đầu vào 	•	Mã địa chỉ
+•	Mã khách hàng
+Trình tự xử lí	•		Lấy mã địa chỉ từ thanh địa chỉ và mã khách hàng từ phiên đăng nhập
+•	Kết nối CSDL
+•	Kiểm tra địa chỉ có mã trùng mã địa chỉ vừa lấy và mã khách hàng trùng mã khách hàng của phiên đăng nhập
+•	Xoá địa chỉ nhận hàng vừa kiểm tra
+•	Kiểm tra id địa chỉ vừa xoá có phải mặc định
+o	Đúng: đặt mặc định địa chỉ đầu tiên
+•	Thay đổi id địa chỉ lại theo thứ tự từ 1 đến hết
+•	Tải lại trang
+Đầu ra	•	Hiển thị các địa chỉ sau khi cập nhật (Nếu đã không còn địa chỉ nào, hiển thị không có địa chỉ nào, mời tạo thêm)
+•	Thông báo xoá địa chỉ thành công
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.28  Xem thông tin cá nhân:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Xem thông tin cá nhân
+Kích hoạt	Người dùng ấn vào nút có tên người dùng trên thanh menu
+Đầu vào 	Không
+Trình tự xử lí	•	Chuyển sang sang trang thông tin khách hàng
+•	Lấy mã khách hàng từ phiên đăng nhập
+•	Kết nối CSDL
+•	Lấy các thông tin của khách hàng có mã trùng với mã vừa lấy
+•	Lấy thông tin từ form thay đổi thông tin
+Đầu ra	Hiển thị các thông tin người dùng vừa lấy
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.29  Sửa thông tin cá nhân:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Sửa thông tin cá nhân	
+Kích hoạt	Người dùng ấn vào nút có tên người dùng trên thanh menu
+Đầu vào 	Mã khách hàng
+Trình tự xử lí	•	Kết nối CSDL
+•	Lấy thông tin từ form
+•	Cập nhật dữ liệu lên CSDL
+•	Hiển thị các thông tin của khách hàng sau khi cập nhật
+
+Đầu ra	Thông báo sửa thông tin thành công
+Lưu ý	Chỉ có khi khách đã đăng nhập tài khoản
+ 
+2.5.30  Đơn hàng:
+ 
+Các tác nhân	Khách hàng
+Mô tả	Đơn hàng
+Kích hoạt	Người dùng ấn vào nút “Đơn hàng” trên thanh menu
+Đầu vào 	•	Mã khách hàng
+•	Trạng thái đơn hàng
+Trình tự xử lí	•	Chuyển sang trang đơn hàng
+•	Lấy thông tin trạng thái đơn hàng trên thanh địa chỉ, mã khách hàng từ phiên đăng nhập
+•	Kết nối CSDL
+•	Lấy thông tin về các đơn hàng của khách hàng theo trạng thái đơn hàng
+o	2: Đơn hàng đang chờ xét duyệt
+o	3: Đơn hàng đang không được duyệt
+o	4: Đơn hàng đang được giao
+o	5: Đơn hàng đã giao
+o	6: Đơn hàng thành công
+o	7: Đơn hàng đã huỷ
+•	Kiểm tra có đơn hàng nào của khách hàng có cùng trạng thái vừa lấy không
+
+Đầu ra	•	Đúng: Hiển thị ra đơn hàng
+•	Sai: Hiển thị không có đơn hàng
+Lưu ý	•	Chỉ có khi khách đã đăng nhập tài khoản
+•	Trang đăng nhập của Super Admin và Admin khác với trang của khách hàng
+
+
+3  Các yêu cầu phi chức năng
+
+
+Stt	Nội dung	Hiệu quả	Mức độ chi tiết
+1	Cho phép người dùng truy cập	Tốt	Website cho phép người dùng truy cập không bị treo hay xung đột
+2	Giao diện đẹp mắt, để nhìn thân thiện với người dùng	Tiện lợi	Người dùng và người quản trị hệ thống không cần trình độ tin học cao mà vẫn có thể sử dụng hiệu quả
+3	Tốc độ xử lý công việc nhanh chóng và chính xác	Hiệu quả	Xem, tìm kiếm, đăng ký, mua hàng
+4	Tính bảo mật	Tốt	Thông tin cá nhân, tài khoản , mật khẩu, phân quyền thành viên.
+
