@@ -79,29 +79,18 @@ Hệ thống gồm có các tác nhân là Quản lý, Nhân viên và Khách h�
 Để có thể hình dung rõ hơn về các tác nhân cũng như yêu cầu chức năng của hệ thống, các sơ đồ use cases sẽ được trình bày phía sau.
 
 2.3   Biểu đồ use case tổng quát
-https://github.com/N04-PTTKPM-NHOM-008/PTTKPM/blob/main/Image/Picture1.png#:~:text=Picture1.-,png,-Picture2.png 
 
 2.4   Biểu đồ use case phân rã 
-https://github.com/N04-PTTKPM-NHOM-008/PTTKPM/blob/main/Document/SRS#:~:text=Picture1.png-,Picture2,-.png
 
 2.4.1   Phân rã use case “Quản lí”
  
-https://github.com/N04-PTTKPM-NHOM-008/PTTKPM/blob/main/Document/SRS#:~:text=Picture4.png,Raw
 2.4.2   Phân rã use case “Quản lý đặt hàng”
-
- 
 
 2.4.3 Phân rã use case “Quản lí danh mục”
 
- 
-
 2.4.4   Phân rã use case “Quản lý sản phẩm”
 
- 
-
 2.4.5   Phân rã use case “Quản lý thành viên”
-
- 
 
 2.4.6 Phân rã use case “Quản lý khách hàng”
 
