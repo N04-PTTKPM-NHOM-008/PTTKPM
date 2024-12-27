@@ -16,11 +16,13 @@ Hệ thống sẽ bao gồm các chức năng chính như quản lý sản phẩ
 
 1.3	Từ điển thuật ngữ
 
-Software Requirement Specification – SRS	Đặc tả yêu cầu phần mềm
-Use Case(s)	Biểu đồ mô tả những yêu cầu chức năng của hệ thống
-Web server	Phần mềm máy chủ cung cấp các chức năng, tài nguyên cho máy khách
-Javascript	Ngôn ngữ lập trình sử dụng trên các trình duyệt web
-HTML (Hypertext Markup Language)	Ngôn ngữ đánh dấu siêu văn bản
+| Thuật ngữ                                    | Mô tả                                                                                                      |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Software Requirement Specification (SRS)** | Đặc tả yêu cầu phần mềm, mô tả chi tiết các yêu cầu chức năng và phi chức năng của hệ thống.               |
+| **Use Case(s)**                              | Biểu đồ mô tả những yêu cầu chức năng của hệ thống, chỉ ra cách người dùng tương tác với hệ thống.         |
+| **Web server**                               | Phần mềm máy chủ cung cấp các chức năng và tài nguyên cho máy khách (client).                              |
+| **Javascript**                               | Ngôn ngữ lập trình sử dụng trên các trình duyệt web, thường được dùng để phát triển các ứng dụng web động. |
+| **HTML (Hypertext Markup Language)**         | Ngôn ngữ đánh dấu siêu văn bản dùng để cấu trúc và hiển thị nội dung trên các trang web.                   |
 
 1.4	Tài liệu ham khảo
 1.5	Tổng quát
