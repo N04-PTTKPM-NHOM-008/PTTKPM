@@ -23,3 +23,11 @@
 -	Thông qua việc phát triển website bán hàng này, chúng em hy vọng sẽ góp phần thúc đẩy sự phát triển của thương mại điện tử tại Việt Nam, mang lại lợi ích cho cả người tiêu dùng và người bán.
 -	Đứng trước xu thế phát triển của công nghệ thông tin như vũ bão hiện nay thì việc phát triển website bán hàng  trong các cơ sở kinh doanh điều thiết yếu và mang tính thực tế cao. Qua việc nghiên cứu xây dựng đề tài này, chúng em đã phần nào củng cố được các kiến thức về lập trình và nắm được cách làm thế nào để phát triển được một website bán hàng. 
 
+5. Các công nghệ sử dụng
+Dự án này sử dụng các công nghệ sau:
+
+- HTML: Cấu trúc trang web.
+- CSS / SASS: Định dạng giao diện với CSS và tiền xử lý SASS để tối ưu hóa mã nguồn.
+- JavaScript: Tạo tương tác động trên trang web.
+- Firebase:
+- Firebase Authentication: Quản lý đăng nhập/đăng ký người dùng.
