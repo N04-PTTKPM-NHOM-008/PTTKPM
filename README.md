@@ -31,3 +31,4 @@ Dự án này sử dụng các công nghệ sau:
 - JavaScript: Tạo tương tác động trên trang web.
 - Firebase:
 - Firebase Authentication: Quản lý đăng nhập/đăng ký người dùng.
+- Emailjs
