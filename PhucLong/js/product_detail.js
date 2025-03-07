@@ -255,7 +255,7 @@ async function getRelatedProducts() {
 
 async function renderRelatedProducts(category) {
     const products = await getRelatedProducts();
-    const relatedProducts = products.filter((p) => p.category === category);
+    const relatedProducts = products.filter((p) => p.category === category);// lấy ra các sản phẩm có nội dung liên quan
     const relatedProductContainer = document.getElementById("related_product");
 
     relatedProductContainer.innerHTML = ""; // Xóa nội dung cũ

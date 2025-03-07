@@ -33,7 +33,7 @@ async function getCards() {
 const sendingEmail = async () => {
     const serviceId = 'service_gcw8sl8';
     const templateId = 'template_t21zqjo';
-    const public_key = 'H3d-OtjvkwB-PtLa_';
+    const public_key = 'H3d-OtjvkwB-PtLa_';//khởi đầu của một hàm gửi email, nơi bạn thiết lập các thông tin cần thiết (service ID, template ID, public key) để tương tác với một dịch vụ gửi email bên ngoài. Các thông tin này giúp xác định cấu hình và đảm bảo rằng yêu cầu gửi email được thực hiện một cách hợp lệ và được xác thực.
 
     const template_params = {
         from_name: 'Phúc Long Coffe Store',
